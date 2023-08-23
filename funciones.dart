@@ -1,31 +1,24 @@
 void main(List<String> args) {
   mostrarMensaje();
-  mostrarMensaje();
-  mostrarMensaje();
-  mostrarMensaje();
-  print(multiplicar(5, 2));
+  print(suma(5, 2));
+  multiplicacion(5);
 }
 
-mostrarMensaje() {
-  print("Hola Mundo!!! desde una funcion");
+void mostrarMensaje() {
+  print("Hola Mundo!!! desde una función");
 }
 
-/*void suma() { // funcion sin retorno//
-  print("La suma es: ${2 + 2}");
-}*/
+/* void suma() {
+  print("La suma es:  ${2 + 2}");
+} */
 
-/*int suma(int n1, int n2) {
+int suma(int n1, int n2) {
   print("La suma es: ");
-  return n1 + n2;*/
+  return n1 + n2;
+}
 
-  //hacer una funcion que haga la tabla de multiplicar de un numero que ingrese//
-
-  void multiplicacion() {
-    print("La multiplicacion es: ${2 * 2}");
+void multiplicacion(int n1) {
+  for (var i = 1; i <= 12; i++) {
+    print("$n1 x $i = ${n1 * i}");
   }
-
-  int multiplicar(int n1, int n2) {
-    print("La multiplicacion es: ");
-    return n1 * n2;
-  }
-
+}
