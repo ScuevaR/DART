@@ -3,8 +3,8 @@ void main(List<String> args) {
   Set<String> productos1 = {"polo", "polera", "corbata"};
   print(productos);
 
-  //productos.add("medias");
-  //print(productos);
+  /*productos.add("medias");
+  print(productos);*/
 
   productos.forEach((item) {
     print(item);
